@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.wechat.dao.IssueMapper">
+    <resultMap id="Issue" type="org.wechat.model.Issue">
+        <id column="id" property="id"/>
+        <result column="subject" property="subject"/>
+        <result column="answerA" property="answerA"/>
+        <result column="answerB" property="answerB"/>
+        <result column="resultA" property="resultA"/>
+        <result column="resultB" property="resultB"/>
+        <result column="type" property="type"/>
+        <result column="createBy" property="createBy"/>
+        <result column="createTime" property="createTime"/>
+    </resultMap>
+
+    <select id="findByOptions" resultMap="Issue">
+        select *
+        FROM  issue
+    </select>
+
+</mapper>
