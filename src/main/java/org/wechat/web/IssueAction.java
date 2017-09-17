@@ -23,7 +23,7 @@ public class IssueAction {
     @Autowired
     private IssueService issueService;
 
-    @RequestMapping("/query")
+    @RequestMapping(value = "/query",produces = "text/html;Dcharset=UTF-8")
     @ResponseBody
     public String findAll(){
         IssueOptions options = new IssueOptions();
