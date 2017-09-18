@@ -10,6 +10,7 @@
         <result column="resultA" property="resultA"/>
         <result column="resultB" property="resultB"/>
         <result column="type" property="type"/>
+        <result column="issueNo" property="issueNo"/>
         <result column="createBy" property="createBy"/>
         <result column="createTime" property="createTime"/>
     </resultMap>

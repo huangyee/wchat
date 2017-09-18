@@ -15,4 +15,6 @@ public interface BaseMapper <T>{
 
     List<T> findByOptions(BaseOptions options);
 
+    void insert(T t);
+
 }

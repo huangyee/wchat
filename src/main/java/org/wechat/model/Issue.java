@@ -5,6 +5,7 @@ package org.wechat.model;
  */
 public class Issue extends BaseModel {
 
+    private String issueNo;//题号
     private String subject;//题目
     private String answerA;//答案A
     private String answerB;//答案B
@@ -13,6 +14,22 @@ public class Issue extends BaseModel {
     private String resultB;
 
     private String type;//问题分类
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getIssueNo() {
+        return issueNo;
+    }
+
+    public void setIssueNo(String issueNo) {
+        this.issueNo = issueNo;
+    }
 
     public String getSubject() {
         return subject;

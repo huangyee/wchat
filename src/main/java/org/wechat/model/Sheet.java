@@ -7,6 +7,7 @@ public class Sheet extends BaseModel {
 
     private int mobile;//答题者的手机号
     private String result;//答案
+    private String issueNo;//题号
 
     public int getMobile() {
         return mobile;
@@ -22,5 +23,13 @@ public class Sheet extends BaseModel {
 
     public void setResult(String result) {
         this.result = result;
+    }
+
+    public String getIssueNo() {
+        return issueNo;
+    }
+
+    public void setIssueNo(String issueNo) {
+        this.issueNo = issueNo;
     }
 }
