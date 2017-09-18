@@ -27,7 +27,7 @@ public class IssueAction {
     @Autowired
     private SheetService sheetService;
 
-    @RequestMapping(value = "/query",produces = "text/html;charset=UTF-8")
+    @RequestMapping(value = "/query",produces = "text/json;charset=UTF-8")
     @ResponseBody
     public String findAll(){
         IssueOptions options = new IssueOptions();
